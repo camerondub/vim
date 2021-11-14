@@ -55,3 +55,6 @@
 [submodule "bundle/vim-solidity"]
 	path = bundle/vim-solidity
 	url = git@github.com:tomlion/vim-solidity.git
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = git@github.com:cespare/vim-toml.git
