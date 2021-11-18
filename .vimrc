@@ -386,6 +386,10 @@ let g:ale_python_mypy_ignore_invalid_syntax = 1
 autocmd FileType python let b:ale_python_pylint_options =
     \ '--init-hook="import sys; sys.path.insert(0, '''. expand('%:p:h') . ''')"'
 let g:ale_javascript_prettier_options = '--tab-width 4'
+let g:ale_solidity_solc_executable = 'node_modules/.bin/solcjs'
+let g:ale_solidity_solc_options = '--bin'
+let g:ale_solidity_solhint_executable = 'node_modules/.bin/solhint'
+let g:ale_solidity_solium_executable = 'node_modules/.bin/solium'
 " ALTERNATE "
 nnoremap <leader>a<CR>  :A<CR>
 nnoremap <leader>as  :AS<CR>
