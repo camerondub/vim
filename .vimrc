@@ -351,13 +351,12 @@ nnoremap <leader>ata :ALEToggle<CR>
 nnoremap <leader>atb :ALEToggleBuffer<CR>
 nnoremap <leader>atf :call ALEToggleFix()<CR>
 
-inoremap <C-e> <C-\><C-o>:ALEHover<CR>
-autocmd CompleteDone * ALEHover
+inoremap <C-f> <C-\><C-o>:ALEHover<CR>
 let g:ale_hover_to_preview=1
 let g:ale_completion_enabled=1
-let g:ale_completion_delay=2000
+let g:ale_completion_delay=0
 let g:ale_cursor_detail=0
-let g:ale_close_preview_on_insert=0
+let g:ale_close_preview_on_insert=1
 let g:ale_cpp_gcc_options='-std=c++17 -Wall -Wextra -Werror'
 let g:ale_completion_max_suggestions=100
 let g:ale_fix_on_save=1
