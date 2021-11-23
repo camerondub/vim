@@ -314,7 +314,7 @@ let g:gutentags_project_root = ['.guten-root']
 
 " INDENTLINE "
 nnoremap <leader>it     :IndentLinesToggle<CR>
-let g:indentLine_enabled = 0
+let g:indentLine_enabled = 1
 
 
 " ALE "
