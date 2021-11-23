@@ -398,7 +398,8 @@ let g:alternateSearchPath = 'wdr:./include,wdr:./src'
 " CTRLP "
 let g:ctrlp_custom_ignore = { 'file':
     \ '\v(moc_.+\.cpp|\.(o|dll|exe|out|vcproj|a|d|time|obj))$',
-    \ 'dir': '\v[\/](obj|\.git|\.ccls-cache|node_modules|CMakeFiles|CMakeCache|__pycache__)$'   }
+    \ 'dir': '\v[\/](obj|\.git|\.ccls-cache|node_modules|CMakeFiles|CMakeCache|__pycache__|'
+    \ . '.*\.egg-info)$'   }
 let g:ctrlp_map = '<C-f>'
 let g:ctrlp_working_path_mode = '0'
 let g:ctrlp_match_current_file = 1
