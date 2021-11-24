@@ -68,7 +68,7 @@ function! SwitchToNote(name)
         set switchbuf=
     endif
 endfunction
-nnoremap <leader>en :call SwitchToNote('.note.md')<CR>
+nnoremap <leader>en :call SwitchToNote('.note.yml')<CR>
 nnoremap <leader>ee :call SwitchToNote('.env')<CR>
 
 " formatting bindings
@@ -91,18 +91,11 @@ nnoremap <leader>7	<C-w>7w
 nnoremap <leader>8	<C-w>8w
 nnoremap <leader>9	<C-w>9w
 
-
 " sessions and layout
 function! Resize(width, height) abort
     exe 'vert resize ' . a:width
     exe 'resize ' . a:height
 endfunction
-
-nnoremap <leader>l1	<C-w>o:TagbarToggle<CR>:NERDTreeToggle<CR><C-w>h
-nnoremap <leader>l2	<C-w>o<C-w>v<C-w>h:e .note.md<CR><C-w>l
-nnoremap <leader>lf	<C-w>o<C-w>s<C-w>k:TagbarToggle<CR>:NERDTreeToggle
-    \<CR><C-w>h:e .note.md<CR><C-w>j
-nnoremap <leader>l4	<C-w>o<C-w>s<C-w>v<C-w>k<C-w>v<C-w>h:e .note.md<CR><C-w>j
 
 " wincmds
 nnoremap gq <C-w>q
