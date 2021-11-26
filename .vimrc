@@ -308,6 +308,7 @@ let g:gutentags_project_root = ['.guten-root']
 " INDENTLINE "
 nnoremap <leader>it     :IndentLinesToggle<CR>
 let g:indentLine_enabled = 1
+let g:vim_json_conceal = 0
 
 
 " ALE "
