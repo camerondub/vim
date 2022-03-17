@@ -13,6 +13,8 @@ nnoremap <C-B> ,
 inoremap <Nul> <C-X><C-O>
 nnoremap <C-k> <C-u>
 nnoremap <C-j> <C-d>
+nnoremap <C-Up> <Up>"zdd"zp<Up>
+nnoremap <C-Down> "zdd"zp
 let mapleader=","
 let maplocalleader="\<Space>"
 nnoremap <leader>td :Ack! TODO .<CR>
