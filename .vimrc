@@ -44,9 +44,6 @@ nnoremap <leader>hm 	:Make!<space>
 nnoremap <leader>hi 	:Make! install -j4 BUILD=debug<CR>
 nnoremap <leader>mm 	:Make<space>
 nnoremap <leader>mi 	:Make install -j4 BUILD=debug<CR>
-nnoremap <leader>do     :call OpenQuickfix('dispatch')<CR>
-nnoremap <leader>dl     :call OpenQuickfix('dispatch')<CR><C-w>l:q<CR>
-nnoremap <leader>dh     :call OpenQuickfix('dispatch')<CR><C-w>h:q<CR>
 nnoremap <leader>;	:noh<CR>
 nnoremap <leader>hh	:set hls!<CR>
 nnoremap <leader>jf     :execute '%!python3 -m json.tool'<CR>:set ft=json<CR>:w<CR>
@@ -70,7 +67,9 @@ function! SwitchToNote(name)
         set switchbuf=
     endif
 endfunction
-nnoremap <leader>en :call SwitchToNote('.note.yml')<CR>
+nnoremap <leader>no :call SwitchToNote('.note.yml')<CR>
+nnoremap <leader>nn :call SwitchToNote('.note.yml')<CR>
+nnoremap <leader>eo :call SwitchToNote('.env')<CR>
 nnoremap <leader>ee :call SwitchToNote('.env')<CR>
 
 " formatting bindings
@@ -401,10 +400,9 @@ let g:ctrlp_working_path_mode = '0'
 let g:ctrlp_match_current_file = 1
 
 " NERDTREE "
-nnoremap <leader>nf :NERDTreeFind<CR>
-nnoremap <leader>nq :NERDTreeClose<CR>
-nnoremap <leader>no :NERDTree<CR>
-nnoremap <leader>nn :set switchbuf=useopen<CR>:sbuf NERD<CR>:set switchbuf=<CR>
+nnoremap <leader>df :NERDTreeFind<CR>
+nnoremap <leader>dq :NERDTreeClose<CR>
+nnoremap <leader>do :NERDTree<CR>
 let NERDTreeMapActivateNode = 'i'
 let NERDTreeMapOpenSplit = 's'
 let NERDTreeMapOpenVSplit = 'v'
