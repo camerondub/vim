@@ -360,7 +360,8 @@ let g:ale_linters = {
         \ 'python': ['pylsp', 'mypy', 'bandit', 'pylint'],
 	\ 'cpp': ['ccls', 'clang', 'clangcheck', 'clangtidy', 'clazy', 'cppcheck',
         \       'flawfinder', 'gcc'],
-        \ 'javascript': ['tsserver', 'eslint', 'jshint']
+        \ 'javascript': ['tsserver', 'eslint', 'jshint'],
+        \ 'solidity': ['solc', 'solhint']
 	\ }
 let g:ale_fixers = {
 	\ 'python': ['black', 'isort'],
@@ -381,9 +382,8 @@ autocmd FileType python let b:ale_python_pylint_options =
     \ '--init-hook="import sys; sys.path.insert(0, '''. expand('%:p:h') . ''')"'
 let g:ale_javascript_prettier_options = '--tab-width 4'
 let g:ale_solidity_solc_executable = 'node_modules/.bin/solcjs'
-let g:ale_solidity_solc_options = '--bin --output-dir build/solcjs'
-let g:ale_solidity_solhint_executable = 'node_modules/.bin/solhint'
-let g:ale_solidity_solium_executable = 'node_modules/.bin/solium'
+let g:ale_solidity_solc_options = '--bin --include-path node_modules/ --base-path . ' .
+            \ '--output-dir build/solcjs' 
 " ALTERNATE "
 nnoremap <leader>a<CR>  :A<CR>
 nnoremap <leader>as  :AS<CR>
