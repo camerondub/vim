@@ -347,6 +347,7 @@ nnoremap <leader>atb :ALEToggleBuffer<CR>
 nnoremap <leader>atf :call ALEToggleFix()<CR>
 
 inoremap <C-f> <C-\><C-o>:ALEHover<CR>
+let g:ale_virtualtext_cursor = 'disabled'
 let g:ale_hover_to_preview=1
 let g:ale_completion_enabled=1
 let g:ale_completion_delay=0
