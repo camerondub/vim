@@ -393,7 +393,7 @@ let g:alternateSearchPath = 'wdr:./include,wdr:./src'
 let g:ctrlp_custom_ignore = { 'file':
     \ '\v(moc_.+\.cpp|\.(o|dll|exe|out|vcproj|a|d|time|obj))$',
     \ 'dir': '\v[\/](obj|\.git|\.ccls-cache|node_modules|CMakeFiles|CMakeCache|__pycache__|'
-    \ . 'build|.*\.egg-info)$'   }
+    \ . 'build|.*\.egg-info)$|artifacts'   }
 let g:ctrlp_map = '<C-f>'
 let g:ctrlp_working_path_mode = '0'
 let g:ctrlp_match_current_file = 1
