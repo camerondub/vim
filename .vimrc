@@ -25,8 +25,8 @@ nnoremap <leader>cc 	:call CurrentSummary()<CR>
 nnoremap <leader>cq	:call CloseSummary()<CR>
 nnoremap <leader>co	:call OpenQuickfix('')<CR>
 nnoremap <leader>ct	:checktime<CR>
-nnoremap <leader>cg	:set nornu<CR>:set signcolumn=no<CR>
-nnoremap <leader>cr	:set rnu<CR>:set signcolumn=yes<CR>
+nnoremap <leader>cg	:set nornu<CR>:set signcolumn=no<CR>:IndentLinesDisable<CR>
+nnoremap <leader>cr	:set rnu<CR>:set signcolumn=yes<CR>:IndentLinesEnable<CR>
 nnoremap <leader>pq	:pc<CR>
 nnoremap <leader>pt	:ptag <C-R><C-W><CR>
 nnoremap <leader>pg     :setlocal paste<CR>
