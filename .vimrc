@@ -269,8 +269,7 @@ map <Leader>em <Plug>(easymotion-prefix)
 " ACK.VIM "
 let g:ack_qhandler = "call OpenQuickfix('')"
 let g:ack_lhandler = "call OpenLocation()"
-let g:ack_default_options = " -s -H --nocolor --nogroup --column ".
-    \"--ignore-dir={.ccls-cache,__pycache__}"
+let g:ack_default_options = " -s -H --nocolor --nogroup --column"
 
 " FUGITIVE "
 nnoremap <leader>gs     :sp<CR>:Gedit :<CR>
@@ -283,7 +282,7 @@ nnoremap <leader>gl     :Git! log -p<CR>
 nnoremap <leader>gr     :GDelete<CR>
 nnoremap <leader>ge     :Gedit %<CR>
 nnoremap <leader>gm     :GMove
-nnoremap <leader>gf     :Git pull --ff-only<CR>
+nnoremap <leader>gp     :Git pull --ff-only<CR>
 nnoremap <leader>du	:diffupdate<CR>
 nnoremap <leader>dg     :diffget 
 nnoremap <leader>gh :0Gllog<CR>:call OpenLocation()<CR>
