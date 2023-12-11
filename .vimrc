@@ -47,7 +47,6 @@ nnoremap <leader>mi 	:Make install -j4 BUILD=debug<CR>
 nnoremap <leader>;	:noh<CR>
 nnoremap <leader>hh	:set hls!<CR>
 nnoremap <leader>jf     :execute '%!python3 -m json.tool'<CR>:set ft=json<CR>:w<CR>
-nnoremap gw :w<CR>
 
 
 " note bindings
